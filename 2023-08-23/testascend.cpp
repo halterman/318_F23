@@ -13,8 +13,6 @@ bool is_ascending(const std::vector<int>& vec) {
 }
 
 int main() {
-    std::cout << "--- Starting the program ---\n";
     std::vector<int> nums {10, 30, 20, 40};
     std::cout << is_ascending(nums) << '\n';
-    std::cout << "--- Program finished ---\n";
 }
