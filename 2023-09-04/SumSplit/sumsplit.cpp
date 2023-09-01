@@ -8,6 +8,15 @@ int sum(int begin, int end, std::function<int(int)> f) {
     return s;
 }
 
+  
+int sum2(int begin, int end, int (*f)(int)) {
+    int s = 0;
+    for (int i = begin; i <= end; i++)
+        s += f(i);
+    return s;
+}
+
+
 inline int id(int n) { return n; }
 
 int main() {
