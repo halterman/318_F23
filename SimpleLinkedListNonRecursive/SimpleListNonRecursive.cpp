@@ -14,7 +14,7 @@ Node *insert(Node *p, int n) {
     else {
         Node *cursor = p;
         while (cursor->next)
-           cursor =cursor->next;
+           cursor = cursor->next;
         cursor->next = new Node;
         cursor->next->data = n;
         cursor->next->next = nullptr;
